@@ -1,0 +1,109 @@
+.footer {
+    background-color: $black;
+    display : grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    &__logo {
+        width : 100%;
+        height: auto;
+        grid-column: 2/ span 1;
+        object-fit: fill;
+        padding-top : 20px;
+        padding-left: 20px;
+        grid-row: 1/ span 1;
+    }
+    &__title {
+        color : $blue;
+        font-size: $text-m;
+        grid-column:  2/ span 2;
+        grid-row: 2/ span 1;
+        padding-left : 25px;
+    }
+    &__subtitle {
+        color : $white;
+        font : {
+            family : $font-subtitle;
+            size : $text-xs;
+        }
+        grid-column: 2/ span 2;
+        grid-row: 3/ span 1;
+        padding-left: 10px;
+        padding-bottom : 5px;
+    }
+    &__desc {
+        color : $white;
+        font-size : $text-xs;
+        grid-column: 2/ span 2;
+        grid-row: 4/ span 1;
+        padding-bottom : 15px;
+    }
+    &__nav {
+        grid-column: 4/ span 6;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    &__list {
+        list-style: none;
+        grid-column: 1/ span 6 ;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    &__item {
+        color : $white;
+    }
+}
+
+.company {
+    grid-column: 1/ span 1;
+    padding-top : 50px;
+    font : {
+        family : $font-subtitle;
+        size : $text-s;
+    }
+    &__list {
+        list-style : none;
+        padding-top : 10px;
+    }
+    &__item {
+        font : {
+            family : $font-text;
+            size : $text-xs;
+        }
+    }
+}
+.support {
+    grid-column: 3/ span 1;
+    padding-top : 50px;
+    font : {
+        family : $font-subtitle;
+        size : $text-s;
+    }
+    &__list {
+        list-style : none;
+        padding-top: 10px;
+    }
+    &__item {
+        font : {
+            family : $font-text;
+            size : $text-xs;
+        }
+    }
+}
+
+.socials {
+    grid-column: 5/ span 2;
+    font : {
+        family : $font-subtitle;
+        size : $text-s;
+    }
+    padding-top : 50px;
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__icon {
+        width : 100%;
+        height: auto;
+    }
+}

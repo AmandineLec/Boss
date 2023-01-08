@@ -1,0 +1,110 @@
+.home {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+}
+
+.section {
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-column: 2/ span 10;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    column-gap: 20px;
+    grid-template-rows: auto;
+    margin-bottom : 80px;
+    &__title {
+        color : $purple;
+        grid-column: 1/ span 4;
+        font-size : $text-xl;
+        padding-bottom : 20px;
+    }
+    &__img {
+        width: 100%;
+        height : auto;
+        grid-column: 6 / span 5;
+        grid-row : 1 / span 4;
+        object-fit: contain;
+    }
+    &__desc {
+        grid-column: 1/ span 4;
+        font-size : $text-s;
+        padding-bottom: 10px;
+    }
+    &__btn {
+        grid-column: 3/ span 2;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    &__link {
+        align-self: center;
+        padding-left : 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: $white;
+        text-decoration: none;
+        letter-spacing: $letter-spacing;
+        font : {
+            size : $text-m;
+            family : $font-subtitle;
+        }
+        text-transform: uppercase;
+        grid-column: auto;
+        background-color: $blue;
+        -webkit-appearance: none;
+        border: 2px solid $main-purple;
+    }
+    &__link:hover {
+        color: $purple;
+    }
+}
+.--about {
+    grid-column: 1/ span 12;
+    margin-left : 0;
+    margin-right : 0;
+    background-color: $gray;
+    grid-template-rows: auto;
+    &__title {
+        grid-column: 6/ span 4;
+        margin-top : 20px;
+    }
+    &__desc {
+        grid-column: 6/ span 4;
+        margin-bottom : 50px;
+    }
+    &__img {
+        grid-column: 2/ span 4;
+        width: 50%;
+        height: auto;
+        object-fit: contain;
+        margin-top : 20px;
+        margin-bottom : 20px;
+        margin-left : 20px;
+    }
+    &__btn {
+        grid-column: 6/ span 2;
+    }
+}
+.--cards {
+    grid-column: 1/ span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    &__title {
+        grid-column: 1/ span 3;
+        grid-row: 1/ span 1;
+        padding-bottom : 20px;
+        height: auto;
+    }
+    &__btn {
+        grid-column: 10/ span 2;
+        grid-row: 3/ span 1;
+    }
+    &__container {
+        grid-column: 1/ span 12;
+        grid-row: 2/ span 1;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 20px;
+    }
+}

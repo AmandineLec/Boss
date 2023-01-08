@@ -1,0 +1,74 @@
+.card {
+    margin-bottom : 20px;
+    grid-column: span 3;
+    background-color: $black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    &__front {
+        grid-row: 1/ span 4;
+        grid-column: 1/ span 4;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) ;
+        grid-template-rows: auto;
+    }
+    &__img {
+        border-bottom : 3px solid $blue;
+        width: 100%;
+        grid-column: 1/ span 4;
+        grid-row: auto;
+        object-fit: cover;
+    }
+    &__title {
+        padding-top : 10px;
+        padding-bottom : 10px;
+        padding-left : 5px;
+        color : $white;
+        font-size : $text-xl;
+        grid-column: 1/ span 4;
+        grid-row : 4/ span 1;
+    }
+    &__list {
+        padding-left : 5px;
+        padding-bottom : 5px;
+        list-style: none;
+        grid-column: span 4;
+        grid-row : 5/ span 1;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    &__icon {
+        width: 35%;
+        height : auto;
+    }
+    &__genre {
+        font-size : $text-xxs;
+        color: $white;
+        grid-column: 1 / span 4;
+        grid-row : 7/ span 1;
+        padding-left : 5px;
+        padding-bottom : 10px;
+        display : flex;
+    }
+    &__btn {
+        grid-column: 3/ span 2;
+        background-color: $main-purple;
+        border: 2px solid $blue;
+        display: inline-block;
+        margin-right : 10px;
+        margin-bottom : 10px;
+        padding: 5px;
+    }
+    &__link {
+        text-decoration: none;
+        font-size: $text-l;
+        color : $white;
+    }
+    &__link:hover {
+        $color : $blue;
+    }
+    &__cat {
+        padding-right : 5px;
+    }
+    
+}

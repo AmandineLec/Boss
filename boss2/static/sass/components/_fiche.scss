@@ -1,0 +1,23 @@
+.fiche {
+    grid-column: 1/ span 12;
+    margin-left : 50px;
+    margin-right : 50px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);   
+    column-gap: 20px;
+    grid-template-rows: auto;
+    &__title {
+        grid-column: 1/span 3;
+        grid-row: 1/ span 1;
+        font-size : $text-xl;
+        color : $purple;
+        margin-bottom: 20px;;
+    }
+    &__container {
+        grid-column: 1/ span 12;
+        grid-row: 2/ span 1;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 20px;
+    }
+}

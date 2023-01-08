@@ -1,0 +1,59 @@
+.header {
+    background-color: $gray;
+    border-bottom : 5px solid $blue;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    column-gap: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom : 80px;
+    &__logo {
+        grid-row: 1 span 1;
+        width: 100%;
+        grid-column: 1/ span 1;
+        padding-top : 10px;
+        padding-bottom : 10px;
+    }
+    &__title {
+        grid-row: 1/1;
+        font-size : $text-xxl;
+        grid-column: 2/ span 3;
+        padding-top : 30px;
+    }
+    &__subtitle {
+        align-self: end;
+        grid-row: 1/span 1;
+        font : {
+            family : $font-subtitle;
+            size: $text-l;
+        }
+        color : $main-purple;
+        grid-column: 2/ span 3;
+        padding-bottom : 30px;
+    }
+    &__nav {
+        grid-row :auto;
+        grid-column : 5/ span 8;
+        padding-top : 60px;
+    }
+    &__list {
+        list-style: none;
+    }
+    &__link {
+        text-decoration: none;
+        font : {
+            family : $font-title;
+            size : $text-m;
+        }
+        color : $black;
+    }
+    &__item {
+        display: inline-block;
+    }
+    &__img {
+        width : auto;
+        height : 20px;
+        padding-left: 90px;
+    }
+}

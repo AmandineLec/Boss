@@ -1,0 +1,47 @@
+// Importation de la police Poppins
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+    
+    // Importation de la polie Spy Agency Condensed
+@font-face {
+    font-family:"Spy Agency Condensed";
+    src:url("spyagency3_2cond.eot?") format("eot")
+        url("spyagency3_2cond.woff") 
+        format("woff")
+        url("spyagency3_2cond.ttf") 
+        format("truetype")
+        url("spyagency3_2cond.svg#SpyAgencyCondensed") 
+        format("svg");
+    font-weight : normal;
+    font-style:normal, }
+
+//Police
+$font-title : 'Spy Agency Condensed';
+$font-subtitle : 'Poppins';
+$font-text : 'Calibri';
+
+//Couleurs
+$main-purple : #6441a4;
+$purple : #3E207F;
+$gray : #D6D6D6;
+$black : #000000;
+$blue : #00AF98;
+$white : #FFFFFF;
+
+//Taille police
+$text-xxl : rem(40);
+$text-xl : rem(30);
+$text-l : rem(25);
+$text-m : rem(20);
+$text-s : rem(18);
+$text-xs : rem(15);
+$text-xxs : rem(12);
+$text-xxxs : rem(10);
+
+/* Font variantes */
+$letter-spacing: 0.05em;
+
+/* Espaces */
+$space1x: rem(8);
+$space2x: rem(16);
+$space3x: rem(24);
+$space4x: rem(48);
